@@ -8,7 +8,7 @@ pipeline {
         timeout(time: 30, unit: 'MINUTES')
     }
     environment {
-        ARTIFACTORY_CRED=credentials('artifactory_credentials')
+        //ARTIFACTORY_CRED=credentials('artifactory_credentials')
         SCANNERHOME = tool 'Sonar Scanner 4';
     }
     stages {
