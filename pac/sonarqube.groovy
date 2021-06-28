@@ -8,7 +8,6 @@ pipeline {
         timeout(time: 30, unit: 'MINUTES')
     }
     environment {
-        PATH = "/usr/local/bin:/usr/local/bin:$PATH"
         ARTIFACTORY_CRED=credentials('artifactory_credentials')
         SCANNERHOME = tool 'Sonar Scanner 4';
     }
