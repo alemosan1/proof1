@@ -9,7 +9,7 @@ pipeline {
     }
     environment {
         //ARTIFACTORY_CRED=credentials('artifactory_credentials')
-        SCANNERHOME = tool 'Sonar Scanner 4';
+        SCANNERHOME = tool 'Sonar Scanner 5';
     }
     stages {
 
