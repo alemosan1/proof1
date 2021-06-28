@@ -18,10 +18,11 @@ pipeline {
                     sh '''
                         sudo ${SCANNERHOME}/bin/sonar-scanner -X \
                             -Dsonar.projectKey=Evolved5g \
-                            -Dsonar.projectBaseDir=/home/ams@hi.inet/redes_uds \
+                            -Dsonar.projectBaseDir=/home/ams@hi.inet/redes_uds/ \
                             -Dsonar.sources=. \
                             -Dsonar.host.url=http://10.95.133.49 \
-                            -Dsonar.login=8785bc53c0479224e256beeff2f610e5aa157425
+                            -Dsonar.login=40f1332530d31e2372160616f6a458b82c5e429d
+                            -Dsonar.projectName=redes_uds
                     '''
                 }
             }
