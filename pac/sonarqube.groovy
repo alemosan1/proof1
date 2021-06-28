@@ -15,7 +15,6 @@ pipeline {
 
         stage('SonarQube analysis') {
             steps {
-                withSonarQubeEnv('Sonarqb'){
                     sh '''
                         ${SCANNERHOME}/bin/sonar-scanner \
                             -Dsonar.projectKey=Evolved5g \
@@ -25,6 +24,5 @@ pipeline {
                     '''
                 }
             }
-         }
         }
     }
