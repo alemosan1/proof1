@@ -16,7 +16,7 @@ pipeline {
         stage('SonarQube analysis') {
             steps {
                     sh '''
-                        ${SCANNERHOME}/bin/sonar-scanner \
+                        ${SCANNERHOME}/bin/sonar-scanner -X \
                             -Dsonar.projectKey=Evolved5g \
                             -Dsonar.projectBaseDir=/home/ams@hi.inet/redes_uds \
                             -Dsonar.host.url=http://10.95.133.49 \
