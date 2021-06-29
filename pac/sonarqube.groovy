@@ -21,7 +21,9 @@ pipeline {
                             -Dsonar.projectBaseDir=/home/ams@hi.inet/sonar-java/ \
                             -Dsonar.host.url=http://10.95.133.49 \
                             -Dsonar.login=40f1332530d31e2372160616f6a458b82c5e429d \
-                            -Dsonar.projectName=Evolved5g-master
+                            -Dsonar.projectName=Evolved5g-master \
+                            -Dsonar.language=java \
+                            -Dsonar.java.binaries=**/target/classes  
                     '''
                 }
             }
