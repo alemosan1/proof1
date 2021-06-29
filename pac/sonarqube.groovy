@@ -23,6 +23,7 @@ pipeline {
                             -Dsonar.login=40f1332530d31e2372160616f6a458b82c5e429d \
                             -Dsonar.projectName=Evolved5g-master \
                             -Dsonar.language=java \
+                            -Dsonar.sourceEncoding=UTF-8 \
                             -Dsonar.java.binaries=**/target/classes  
                     '''
                 }
